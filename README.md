@@ -1,5 +1,43 @@
-# Vue 3 + Vite
+## Todo List App using Vue
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Prerequisites
+============
+* node.js (version: v22.7.0)
+* Git 
+* Clone the code from GitHub
+* Take the latest pull from Git
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Project setup
+===============
+* Go to the project folder structure
+* Run -> npm install
+* Run -> npm run dev
+* Tests -> npm test
+
+Features
+===============
+
+* List to-do items in a readable format (grid, list, etc.) with the appropriate priority
+displayed
+* Add a new item to the list with an assigned priority.
+* Remove an item from the list.
+* Clear the entire list.
+* Edit existing items.
+* Save to local storage and reload when entering the page
+* Implement unit testing
+* Sort items by priority.
+
+Additional
+* Accessibility.
+* Error handling for Task.
+
+**Todo List page**
+
+![Screenshot 2024-09-15 175046](https://github.com/user-attachments/assets/cb5a790b-4ff6-45b4-8342-a1b7e345c995)
+
+
+**UTs**
+
+![Screenshot 2024-09-15 175216](https://github.com/user-attachments/assets/a2d808ce-ad2c-467c-8921-0a68b60e03de)
+
+
