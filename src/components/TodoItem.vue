@@ -1,20 +1,20 @@
 <template>
-  <li class="task">
+  <li class="task" v-if="todo.title !==''">
     <div className="flex-container"  v-if="isEditing">
           <div className="left-item">
             <input
                 type="text"
-                aria-label="Edit Task Title"
+                aria-label="Edit task title"
                 v-model="newTitle"
             />
             <input
                 type="number"
-                aria-label="Edit Task Priority"
+                aria-label="Edit task priority"
                 v-model="newPriority"
             />
           </div>
           <div className="right-item save-item">
-            <button className="btn" @click="handleEdit" aria-label="Save edited task">Save</button>
+            <button className="btn" @click="handleEdit" aria-label="Save task">Save</button>
             <button  data-testid="cancel-task"  @click="setCancelItem" className="btn"  aria-label="Cancel task">Cancel</button>
           </div>
      </div>

@@ -8,7 +8,7 @@
     <button @click="sortByPriority" class="btn" aria-label="Sort tasks by priority">Sort by Priority</button>
     
     <div class="todo-list"> 
-      <ul role="list" aria-labelledby="todo-list-heading">
+      <ul role="list" aria-labelledby="todo-list-heading" v-if="todos.length > 0">
         <todo-item
           v-for="todo in todos"
           :key="todo.id"
@@ -16,6 +16,9 @@
           @remove="removeTodo"
           @edit="editTodo"
         />
+      </ul>
+      <ul role="list" aria-labelledby="todo-list-heading"  v-else>
+        <li>No data availble</li>
       </ul>
     </div>
   </main>

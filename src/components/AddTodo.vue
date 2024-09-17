@@ -9,7 +9,7 @@
           v-model="title"
           placeholder="Add todo item"
           aria-required="true"
-          aria-invalid={!!errorMessage}
+          aria-label="New task"
         />
       </div>
       <p  v-if="errorMessage !== ''" class="error-msg" 
@@ -27,6 +27,7 @@
           placeholder="Priority (1-5)"
           v-model.number="priority"
           aria-required="true"
+          aria-label="Priority"
         />
       </div>
        <button class="btn" @click="addNewTodo" aria-label="Add new task">
